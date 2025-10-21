@@ -1,0 +1,14 @@
+.nav-difuminado {
+  /* Propiedad clave: Aplica un gradiente lineal */
+  background-image: linear-gradient(
+    to left,            /* Dirección del difuminado: de izquierda a derecha */
+    #ADD8E6,             /* Color inicial: Azul Claro */
+    rgba(173, 216, 230, 0.5), /* Punto medio: El mismo azul pero con 50% de opacidad */
+    transparent          /* Color final: Totalmente transparente */
+  );
+  
+  /* Estilos adicionales para que el nav se vea bien */
+  padding: 15px;
+  border-radius: 50px; /* Opcional: bordes redondeados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Opcional: sombra sutil */
+}
