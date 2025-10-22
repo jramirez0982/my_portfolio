@@ -1,6 +1,6 @@
 export const Footer = () => (
 	<div className="container-fluid justify-content-center p-0">
-		<footer className="footer mt-auto py-3 text-center  px-5 mx-5 mt-5 mb-2 border-top">
+		<footer className="footer mt-auto py-3 text-center  px-5 mx-5 my-5 py-1 border-top">
 			<div className="row">
 				<div className="col-3">
 					<p className="d-flex mb-0 justify-content center"><strong><i className="fa-solid fa-envelope"></i> Email</strong></p>

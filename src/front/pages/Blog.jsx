@@ -7,7 +7,7 @@ export const Blog = () => {
 
     
     return (
-        <div className="text-center mt-5">
+        <div className="text-center mt-5 mb-5">
             
             <p className="lead">
                 <img src={rigoImageUrl} className="img-fluid mb-3" alt="Rigo Baby" />

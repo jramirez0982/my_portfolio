@@ -1,3 +1,7 @@
+body {
+  background-color: azure
+}
+
 .nav-difuminado {
   /* Propiedad clave: Aplica un gradiente lineal */
   background-image: linear-gradient(
