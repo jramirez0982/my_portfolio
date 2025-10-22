@@ -6,22 +6,20 @@ export const Navbar = () => {
 		<nav className="nav-difuminado navbar mx-5">
 			<div className="container ">
 
-				<span className="navbar-brand mb-0 h1 fs-4 fst-italic">Ing. Julián Andrés Ramírez R.</span>
+				<span className="navbar-brand mb-0 h1 fs-4 fst-italic text-wrap">Ing. Julián Andrés Ramírez R.</span>
 
 				<div className="ml-auto">
-					<ul class="nav">
-						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#">Active</a>
+					<ul className="nav">
+						<Link to="/demo" style={{textDecoration: "none"}}>
+						<li className="nav-item">
+							<p className="nav-link active mb-0" aria-current="page">Curriculum</p>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Link</a>
+						</Link>
+						<Link to="/blog" style={{textDecoration: "none"}}>
+						<li className="nav-item">
+							<p className="nav-link active mb-0" aria-disable="false">My blog</p>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Link</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link disabled" aria-disabled="true">Disabled</a>
-						</li>
+						</Link>
 					</ul>
 				</div>
 			</div>

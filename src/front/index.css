@@ -12,3 +12,7 @@
   border-radius: 50px; /* Opcional: bordes redondeados */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Opcional: sombra sutil */
 }
+
+.nav-link:hover {
+    text-decoration: underline; /* Subrayado SÓLO al pasar el ratón */
+}
