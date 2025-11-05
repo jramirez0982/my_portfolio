@@ -61,6 +61,33 @@ export const Home = () => {
 					</div>
 				</div>
 			</div>
+
+			<div className="d-flex justify-content-center">
+				<ul className="border border-0 nav nav-tabs mt-5 pt-5 px-0 mx-5" id="myTab" role="tablist">
+					<li className="nav-item" role="presentation">
+						<button className="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Educación</button>
+					</li>
+					<li className="nav-item" role="presentation">
+						<button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Certificaciones</button>
+					</li>
+					<li className="nav-item" role="presentation">
+						<button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Habilidades</button>
+					</li>
+					<li className="nav-item" role="presentation">
+						<button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false">Experiencia</button>
+					</li>
+				</ul>
+			</div>
+			<div className="justify-content-center">
+				<div className="border border-2 shadow-sm tab-content mx-5 rounded-5" id="myTabContent">
+					<div className="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">...</div>
+					<div className="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">hola</div>
+					<div className="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...</div>
+					<div className="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">...</div>
+				</div>
+			</div>
+
+
 			<div>
 				<i className="container d-flex text-start h2 mt-5 pt-5 px-0 mx-5">Perfil</i>
 				<div className="flex-grow-1 d-flex border-bottom border-dark border-3 mb-1 mx-5"></div>
