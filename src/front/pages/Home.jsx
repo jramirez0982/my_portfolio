@@ -52,14 +52,34 @@ export const Home = () => {
 					</div>
 					{/* Contenedor del Texto (Lorem) */}
 					<div className="flex-grow-1 text-justify mt-2"> {/* flex-grow-1 hace que ocupe el espacio restante. text-start para que el texto justifique a la izquierda dentro de este div */}
-						Ingeniero Electrónico y Magíster en Ciencias Computacionales, poseo una sólida trayectoria 
-						profesional liderando equipos y gestionando proyectos tecnológicos. Soy Full Stack Developer 
-						experto en Python, JavaScript, React, Flask y SQL. Mi experiencia en sectores como el aeronáutico y 
-						el mantenimiento industrial me permite estructurar, optimizar y liderar proyectos creando soluciones escalables y seguras. 
-						Mi enfoque es aportar valor, conectando las necesidades de negocio con la tecnología a través de arquitecturas eficientes, 
+						Ingeniero Electrónico y Magíster en Ciencias Computacionales, poseo una sólida trayectoria
+						profesional liderando equipos y gestionando proyectos tecnológicos. Soy Full Stack Developer
+						experto en Python, JavaScript, React, Flask y SQL. Mi experiencia en sectores como el aeronáutico y
+						el mantenimiento industrial me permite estructurar, optimizar y liderar proyectos creando soluciones escalables y seguras.
+						Mi enfoque es aportar valor, conectando las necesidades de negocio con la tecnología a través de arquitecturas eficientes,
 						conectando la visión de negocio con la excelencia técnica.
 					</div>
 				</div>
+			</div>
+			<div>
+				<i className="container d-flex text-start h2 mt-5 pt-5 px-0 mx-5">Perfil</i>
+				<div className="flex-grow-1 d-flex border-bottom border-dark border-3 mb-1 mx-5"></div>
+			</div>
+			<div>
+				<i className="container d-flex text-start h2 mt-5 pt-5 px-0 mx-5">Habilidades</i>
+				<div className="flex-grow-1 d-flex border-bottom border-dark border-3 mb-1 mx-5"></div>
+			</div>
+			<div>
+				<i className="container d-flex text-start h2 mt-5 pt-5 px-0 mx-5">Educación</i>
+				<div className="flex-grow-1 d-flex border-bottom border-dark border-3 mb-1 mx-5"></div>
+			</div>
+			<div>
+				<i className="container d-flex text-start h2 mt-5 pt-5 px-0 mx-5">Certificaciones</i>
+				<div className="flex-grow-1 d-flex border-bottom border-dark border-3 mb-1 mx-5"></div>
+			</div>
+			<div>
+				<i className="container d-flex text-start h2 mt-5 pt-5 px-0 mx-5">Experiencia</i>
+				<div className="flex-grow-1 d-flex border-bottom border-dark border-3 mb-1 mx-5"></div>
 			</div>
 		</div>
 	);
