@@ -46,13 +46,18 @@ export const Home = () => {
 						<img
 							src={julianRamirez}
 							className="img-fluid rounded-circle"
-							style={{ width: "200px", height: "200px", objectFit: "cover" }} /* Tamaño fijo para la imagen */
+							style={{ width: "250px", height: "250px", objectFit: "cover" }} /* Tamaño fijo para la imagen */
 							alt="Julian Ramirez"
 						/>
 					</div>
 					{/* Contenedor del Texto (Lorem) */}
-					<div className="flex-grow-1 text-start"> {/* flex-grow-1 hace que ocupe el espacio restante. text-start para que el texto justifique a la izquierda dentro de este div */}
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, tenetur, consequatur deleniti tempore aliquam dolores esse magnam doloribus neque officiis rem dolor officia eaque nostrum vero. Cumque voluptates incidunt delectus repellat reiciendis deserunt minima sapiente expedita. Quia sequi est nesciunt, fugit rem ex iste nulla, iusto soluta labore eveniet! Sapiente?
+					<div className="flex-grow-1 text-justify mt-2"> {/* flex-grow-1 hace que ocupe el espacio restante. text-start para que el texto justifique a la izquierda dentro de este div */}
+						Ingeniero Electrónico y Magíster en Ciencias Computacionales, poseo una sólida trayectoria 
+						profesional liderando equipos y gestionando proyectos tecnológicos. Soy Full Stack Developer 
+						experto en Python, JavaScript, React, Flask y SQL. Mi experiencia en sectores como el aeronáutico y 
+						el mantenimiento industrial me permite estructurar, optimizar y liderar proyectos creando soluciones escalables y seguras. 
+						Mi enfoque es aportar valor, conectando las necesidades de negocio con la tecnología a través de arquitecturas eficientes, 
+						conectando la visión de negocio con la excelencia técnica.
 					</div>
 				</div>
 			</div>
