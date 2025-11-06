@@ -34,13 +34,13 @@ export const Home = () => {
 	}, [])
 
 	return (
-		<div className="text-center mt-5 mb-5">
+		<div className="text-center mt-5 mb-5 pt-5">
 			{/* Contenedor principal para centrar la fila horizontalmente */}
-			<div className="d-flex justify-content-center">
+			<div className="d-flex justify-content-center border border-3 rounded-5 mx-5 border-custom-light-blue">
 				{/* Contenedor de la imagen y el texto: usamos d-flex para que estén lado a lado */}
 				{/* Usamos 'align-items-center' para alinearlos verticalmente al centro (opcional) */}
 				{/* Se usa 'col-lg-8' o un tamaño similar para limitar el ancho del contenido y mantener el centrado */}
-				<div className="d-flex flex-column flex-lg-row align-items-center col-10 col-md-8 col-lg-6">
+				<div className="d-flex flex-column flex-lg-row align-items-center col-12 col-md-10 col-lg-8 p-4">
 					{/* Contenedor de la Imagen */}
 					<div className="flex-shrink-0 me-4"> {/* flex-shrink-0 previene que se encoja. me-4 es margin-right */}
 						<img
@@ -88,26 +88,7 @@ export const Home = () => {
 			</div>
 
 
-			<div>
-				<i className="container d-flex text-start h2 mt-5 pt-5 px-0 mx-5">Perfil</i>
-				<div className="flex-grow-1 d-flex border-bottom border-dark border-3 mb-1 mx-5"></div>
-			</div>
-			<div>
-				<i className="container d-flex text-start h2 mt-5 pt-5 px-0 mx-5">Habilidades</i>
-				<div className="flex-grow-1 d-flex border-bottom border-dark border-3 mb-1 mx-5"></div>
-			</div>
-			<div>
-				<i className="container d-flex text-start h2 mt-5 pt-5 px-0 mx-5">Educación</i>
-				<div className="flex-grow-1 d-flex border-bottom border-dark border-3 mb-1 mx-5"></div>
-			</div>
-			<div>
-				<i className="container d-flex text-start h2 mt-5 pt-5 px-0 mx-5">Certificaciones</i>
-				<div className="flex-grow-1 d-flex border-bottom border-dark border-3 mb-1 mx-5"></div>
-			</div>
-			<div>
-				<i className="container d-flex text-start h2 mt-5 pt-5 px-0 mx-5">Experiencia</i>
-				<div className="flex-grow-1 d-flex border-bottom border-dark border-3 mb-1 mx-5"></div>
-			</div>
+			
 		</div>
 	);
 }; 

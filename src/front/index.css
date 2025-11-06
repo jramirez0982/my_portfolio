@@ -1,5 +1,5 @@
 body {
-  background-color: white
+  background-color: azure
 }
 
 .nav-difuminado {
@@ -19,4 +19,8 @@ body {
 
 .nav-link:hover {
     text-decoration: underline; /* Subrayado SÓLO al pasar el ratón */
+}
+
+.border-custom-light-blue {
+  border-color: rgba(173, 216, 230, 0.5) !important;
 }
