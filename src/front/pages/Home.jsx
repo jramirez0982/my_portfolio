@@ -104,7 +104,7 @@ export const Home = () => {
 				{
 					estudiosFormales.map((estudios, index) => {
 						return (
-							<EstudiosCard universidad={estudios.Universidad} titulo={estudios.Titulo} lugar={estudios.lugar} fecha={estudios.fecha} logo={estudios.logo} />
+							<EstudiosCard universidad={estudios.Universidad} titulo={estudios.Titulo} lugar={estudios.lugar} fecha={estudios.fecha} logo={estudios.ImagenLogo} />
 						)
 					})
 				}
