@@ -3,8 +3,9 @@ import { Link } from "react-router-dom";
 export const Navbar = () => {
 
 	return (
-		<nav className="nav-difuminado navbar mx-5 fixed-top">
-			<div className="container ">
+		
+		<nav className="nav-difuminado navbar mx-5  fixed-top">
+			<div className="d-flex container">
 
 				<span className="navbar-brand mb-0 h1 fs-5 fst-italic text-wrap">Ing. Julián Andrés Ramírez R.</span>
 

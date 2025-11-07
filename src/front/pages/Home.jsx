@@ -34,7 +34,7 @@ export const Home = () => {
 	}, [])
 
 	return (
-		<div className="text-center mt-5 mb-5 pt-5">
+		<div className="text-center mt-5 pt-5">
 			{/* Contenedor principal para centrar la fila horizontalmente */}
 			<div className="d-flex justify-content-center border border-3 rounded-5 mx-5 border-custom-light-blue">
 				{/* Contenedor de la imagen y el texto: usamos d-flex para que estén lado a lado */}
