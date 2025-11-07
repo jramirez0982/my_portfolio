@@ -24,3 +24,19 @@ body {
 .border-custom-light-blue {
   border-color: rgba(173, 216, 230, 0.5) !important;
 }
+
+.card-elevable {
+    /* 1. Estilo base (sombra sutil para darle profundidad inicial) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    
+    /* 2. Añade transición para que el cambio sea suave */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+}
+
+.card-elevable:hover {
+    /* 3. Aumenta la elevación (lo mueve ligeramente hacia arriba) */
+    transform: translateY(-8px); 
+    
+    /* 4. Aumenta la sombra para el efecto de "sobresalir" */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
