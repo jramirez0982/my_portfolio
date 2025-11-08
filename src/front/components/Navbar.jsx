@@ -3,40 +3,59 @@ import { Link } from "react-router-dom";
 export const Navbar = () => {
 
 	return (
-		
-		<nav className="nav-difuminado navbar mx-5  fixed-top">
-			<div className="d-flex container">
 
+		<nav className="nav-difuminado navbar navbar-expand-lg fixed-top mx-5">
+			<div className="container d-flex">
+
+				{/* Brand / Marca */}
 				<span className="navbar-brand mb-0 h1 fs-5 fst-italic text-wrap">Ing. Julián Andrés Ramírez R.</span>
 
-				<div className="ml-auto">
-					<ul className="nav">
-						<Link to="/demo" style={{textDecoration: "none"}}>
-						<li className="nav-item">
-							<p className="nav-link active mb-0" aria-current="page">Perfil</p>
-						</li>
-						</Link>
-						<Link to="/blog" style={{textDecoration: "none"}}>
-						<li className="nav-item">
-							<p className="nav-link active mb-0" aria-disable="false">Habilidades</p>
-						</li>
-						</Link>
-						<Link to="/blog" style={{textDecoration: "none"}}>
-						<li className="nav-item">
-							<p className="nav-link active mb-0" aria-disable="false">Educación</p>
-						</li>
-						</Link>
-						<Link to="/blog" style={{textDecoration: "none"}}>
-						<li className="nav-item">
-							<p className="nav-link active mb-0" aria-disable="false">Certificaciones</p>
-						</li>
-						</Link>
-						<Link to="/blog" style={{textDecoration: "none"}}>
-						<li className="nav-item">
-							<p className="nav-link active mb-0" aria-disable="false">Experiencia</p>
-						</li>
-						</Link>
-					</ul>
+				{/* 1. Botón Toggler para Móviles */}
+				<button
+					className="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarMenu"
+					aria-controls="navbarMenu"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span className="navbar-toggler-icon"></span>
+				</button>
+
+				{/* 2. Contenedor Colapsable (Incluye la lista de enlaces) */}
+				{/* Usamos ms-auto en lugar de ml-auto para alinear a la derecha en Bootstrap 5 */}
+				<div className="collapse navbar-collapse" id="navbarMenu">
+					<div className="ms-auto">
+						{/* NOTA: He cambiado <p> por <a> en tus enlaces, ya que <p> no es semánticamente correcto para una navegación. */}
+						<ul className="navbar-nav">
+							<Link to="/demo" style={{ textDecoration: "none" }}>
+								<li className="nav-item">
+									<a className="nav-link active mb-0" aria-current="page">Perfil</a>
+								</li>
+							</Link>
+							<Link to="/blog" style={{ textDecoration: "none" }}>
+								<li className="nav-item">
+									<a className="nav-link active mb-0">Habilidades</a>
+								</li>
+							</Link>
+
+							<li className="nav-item">
+								<a className="nav-link active mb-0" href="#educacion">Educación</a>
+							</li>
+
+							<Link to="/blog" style={{ textDecoration: "none" }}>
+								<li className="nav-item">
+									<a className="nav-link active mb-0">Certificaciones</a>
+								</li>
+							</Link>
+							<Link to="/blog" style={{ textDecoration: "none" }}>
+								<li className="nav-item">
+									<a className="nav-link active mb-0">Experiencia</a>
+								</li>
+							</Link>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</nav>

@@ -40,28 +40,32 @@ export const Home = () => {
 			Titulo: "Magister en Ciencias Computacionales y Telecomunicaciones",
 			Universidad: "Universidad Utel",
 			lugar: "Ciudad de Mexico, Mexico",
-			ImagenLogo: "src/front/assets/img/utel-logo.png"
+			ImagenLogo: "src/front/assets/img/logo-universidad-utel1.jpeg",
+			fecha: "Enero de 2023"
 		},
 
 		{
 			Titulo: "Especialista en Automática",
 			Universidad: "Universidad Pontificia Bolivariana",
 			lugar: "Medellín, Colombia",
-			ImagenLogo: "src/front/assets/img/upb-logo.png"
+			ImagenLogo: "src/front/assets/img/upb-logo.png",
+			fecha: "Marzo de 2018"
 		},
 
 		{
 			Titulo: "Especialista en Gerencia de Proyectos",
 			Universidad: "Universidad Esumer",
 			lugar: "Medellín Colombia",
-			ImagenLogo: "src/front/assets/img/esumer-logo.png"
+			ImagenLogo: "src/front/assets/img/logo-esumer.jpeg",
+			fecha: "Marzo de 2012"
 		},
 
 		{
 			Titulo: "Ingeniero Electrónico",
 			Universidad: "Universidad Nacional de Colombia",
 			lugar: "Manizales, Colombia",
-			ImagenLogo: "src/front/assets/img/unal-logo.png"
+			ImagenLogo: "src/front/assets/img/unal-logo.jpg",
+			fecha: "Agosto de 2005"
 
 		}
 
@@ -96,7 +100,7 @@ export const Home = () => {
 				</div>
 			</div>
 
-			<div className="d-flex justify-content-center flex-column border border-3 rounded-5 mx-5 border-custom-light-blue m-5 p-5">
+			<div id="educacion" className="d-flex justify-content-center flex-column border border-3 rounded-5 mx-5 border-custom-light-blue m-5 p-5 fijar-bajo-navbar">
 				<div className="fs-3 fw-bold mb-3">
 					Formación Académica
 				</div>
