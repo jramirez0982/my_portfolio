@@ -29,6 +29,11 @@ export const Navbar = () => {
 					<div className="ms-auto">
 						{/* NOTA: He cambiado <p> por <a> en tus enlaces, ya que <p> no es semánticamente correcto para una navegación. */}
 						<ul className="navbar-nav">
+
+							<li className="nav-item">
+								<a className="nav-link active mb-0" href="#educacion">Educación</a>
+							</li> 
+							
 							<Link to="/demo" style={{ textDecoration: "none" }}>
 								<li className="nav-item">
 									<a className="nav-link active mb-0" aria-current="page">Perfil</a>
@@ -40,9 +45,7 @@ export const Navbar = () => {
 								</li>
 							</Link>
 
-							<li className="nav-item">
-								<a className="nav-link active mb-0" href="#educacion">Educación</a>
-							</li>
+							
 
 							<Link to="/blog" style={{ textDecoration: "none" }}>
 								<li className="nav-item">

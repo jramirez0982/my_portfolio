@@ -100,7 +100,7 @@ export const Home = () => {
 				</div>
 			</div>
 
-			<div id="educacion" className="d-flex justify-content-center flex-column border border-3 rounded-5 mx-5 border-custom-light-blue m-5 p-5 fijar-bajo-navbar">
+			<div id="educacion" className="d-flex justify-content-center w-75 mx-auto flex-column border-bottom border-primary border-3 m-5 p-5">
 				<div className="fs-3 fw-bold mb-3">
 					Formación Académica
 				</div>
@@ -116,7 +116,24 @@ export const Home = () => {
 
 			</div>
 
+			<div id="educacion" className="d-flex justify-content-center w-75 mx-auto flex-column border-bottom border-primary border-3 m-5 p-5">
+				<div className="fs-3 fw-bold mb-3">
+					Habilidades
+				</div>
+				<div className="container">
+					<div className="row">
+						{
+							estudiosFormales.map((estudios, index) => {
+								return (
 
+									<p className="col-4">hoal ahola</p>
+								)
+							})
+						}
+					</div>
+				</div>
+
+			</div>
 
 		</div>
 	);
