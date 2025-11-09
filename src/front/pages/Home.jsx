@@ -100,33 +100,41 @@ export const Home = () => {
 				</div>
 			</div>
 
-			<div id="educacion" className="d-flex justify-content-center w-75 mx-auto flex-column border-bottom border-primary border-3 m-5 p-5">
+			<div id="educacion" className="justify-content-center mx-5 flex-column border-bottom border-primary border-3 p-5">
 				<div className="fs-3 fw-bold mb-3">
 					Formación Académica
 				</div>
 
-				{
-					estudiosFormales.map((estudios, index) => {
-						return (
-							<EstudiosCard universidad={estudios.Universidad} titulo={estudios.Titulo} lugar={estudios.lugar} fecha={estudios.fecha} logo={estudios.ImagenLogo} />
-						)
-					})
-				}
+				<div className="d-flex">
+					<div className="row g-0 justify-content-center">
+						{
+							estudiosFormales.map((estudios, index) => {
+								return (
+									<div className="col-md-5 m-1 p-2">
+										<EstudiosCard universidad={estudios.Universidad} titulo={estudios.Titulo} lugar={estudios.lugar} fecha={estudios.fecha} logo={estudios.ImagenLogo} />
+									</div>
+								)
+							})
+						}
+					</div>
+				</div>
 
 
 			</div>
 
-			<div id="educacion" className="d-flex justify-content-center w-75 mx-auto flex-column border-bottom border-primary border-3 m-5 p-5">
+			<div id="educacion" className="justify-content-center mx-5 flex-column border-bottom border-primary border-3 p-5">
 				<div className="fs-3 fw-bold mb-3">
 					Habilidades
 				</div>
-				<div className="container">
-					<div className="row">
+
+				<div className="d-flex">
+					<div className="row g-0 justify-content-center">
 						{
 							estudiosFormales.map((estudios, index) => {
 								return (
-
-									<p className="col-4">hoal ahola</p>
+									<div className="col-md-5 m-1 p-2">
+										<EstudiosCard universidad={estudios.Universidad} titulo={estudios.Titulo} lugar={estudios.lugar} fecha={estudios.fecha} logo={estudios.ImagenLogo} />
+									</div>
 								)
 							})
 						}

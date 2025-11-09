@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 export const EstudiosCard = (props) => {
     return (
         
-        <div className="d-flex border border-1 border-secondary card mb-3 card-elevable w-75 mx-auto">
+        <div className="d-flex border border-1 border-secondary card mb-3 card-elevable mx-auto h-100">
             <div className="row g-0 align-items-center">
                 <div className="col-md-4">
                     <img src={props.logo} className="img-fluid rounded-start m-2 p-2" alt="..." />
