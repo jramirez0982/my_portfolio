@@ -11,8 +11,8 @@ export const EstudiosCard = (props) => {
                 </div>
                 <div className="col-md-8">
                     <div className="card-body ">
-                        <h3 className="card-title fst-italic">{props.universidad}</h3>
-                        <h5 className="card-text">{props.titulo}</h5>
+                        <h3 className="card-title fst-talic">{props.universidad}</h3>
+                        <h5 className="card-text fs-5">{props.titulo}</h5>
                         <p className="card-text">{props.lugar}</p>
                         <p className="card-text"><small className="text-body-secondary">{props.fecha}</small></p>
                     </div>

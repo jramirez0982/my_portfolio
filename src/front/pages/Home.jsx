@@ -37,7 +37,7 @@ export const Home = () => {
 
 	const estudiosFormales = [
 		{
-			Titulo: "Magister en Ciencias Computacionales y Telecomunicaciones",
+			Titulo: "Magister en Ciencias Computacionales",
 			Universidad: "Universidad Utel",
 			lugar: "Ciudad de Mexico, Mexico",
 			ImagenLogo: "src/front/assets/img/logo-universidad-utel1.jpeg",
