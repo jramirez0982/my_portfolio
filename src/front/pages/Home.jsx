@@ -3,6 +3,7 @@ import rigoImageUrl from "../assets/img/rigo-baby.jpg";
 import julianRamirez from "../assets/img/julian-ramirez.png";
 import useGlobalReducer from "../hooks/useGlobalReducer.jsx";
 import { EstudiosCard } from "../components/EstudiosCard.jsx";
+import { HabilidadesCard } from "../components/HabilidadesCard.jsx";
 
 export const Home = () => {
 
@@ -89,13 +90,13 @@ export const Home = () => {
 						/>
 					</div>
 					{/* Contenedor del Texto (Lorem) */}
-					<div className="flex-grow-1 text-justify mt-2"> {/* flex-grow-1 hace que ocupe el espacio restante. text-start para que el texto justifique a la izquierda dentro de este div */}
+					<div className="font-base lead flex-grow-1 text-justify mt-2"> <strong> {/* flex-grow-1 hace que ocupe el espacio restante. text-start para que el texto justifique a la izquierda dentro de este div */}
 						Ingeniero Electrónico y Magíster en Ciencias Computacionales, poseo una sólida trayectoria
 						profesional liderando equipos y gestionando proyectos tecnológicos. Soy Full Stack Developer
 						experto en Python, JavaScript, React, Flask y SQL. Mi experiencia en sectores como el aeronáutico y
 						el mantenimiento industrial me permite estructurar, optimizar y liderar proyectos creando soluciones escalables y seguras.
 						Mi enfoque es aportar valor, conectando las necesidades de negocio con la tecnología a través de arquitecturas eficientes,
-						conectando la visión de negocio con la excelencia técnica.
+						conectando la visión de negocio con la excelencia técnica. </strong>
 					</div>
 				</div>
 			</div>
@@ -129,15 +130,9 @@ export const Home = () => {
 
 				<div className="d-flex">
 					<div className="row g-0 justify-content-center">
-						{
-							estudiosFormales.map((estudios, index) => {
-								return (
-									<div className="col-md-5 m-1 p-2">
-										<EstudiosCard universidad={estudios.Universidad} titulo={estudios.Titulo} lugar={estudios.lugar} fecha={estudios.fecha} logo={estudios.ImagenLogo} />
-									</div>
-								)
-							})
-						}
+						
+						<HabilidadesCard />
+						
 					</div>
 				</div>
 
