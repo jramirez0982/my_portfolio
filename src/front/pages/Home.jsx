@@ -101,7 +101,7 @@ export const Home = () => {
 				</div>
 			</div>
 
-			<div id="educacion" className="justify-content-center mx-5 flex-column border-bottom border-primary border-3 p-5">
+			<div id="educacion" className="justify-content-center mx-5 flex-column border-bottom border-custom-light-blue border-3 p-5">
 				<div className="fs-3 fw-bold mb-3">
 					Formación Académica
 				</div>
@@ -123,7 +123,7 @@ export const Home = () => {
 
 			</div>
 
-			<div id="educacion" className="justify-content-center mx-5 flex-column border-bottom border-primary border-3 p-5">
+			<div id="educacion" className="justify-content-center mx-5 flex-column border-bottom border-custom-light-blue border-3 p-5">
 				<div className="fs-3 fw-bold mb-3">
 					Habilidades
 				</div>

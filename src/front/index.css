@@ -1,20 +1,19 @@
 body {
-  background-color: azure
+  background-color: white/*azure*/
 }
 
 .nav-difuminado {
-  /* Propiedad clave: Aplica un gradiente lineal */
-  background-image: linear-gradient(
-    to left,            /* Dirección del difuminado: de izquierda a derecha */
-    #ADD8E6,             /* Color inicial: Azul Claro */
-    rgba(173, 216, 230, 0.5), /* Punto medio: El mismo azul pero con 50% de opacidad */
-    transparent          /* Color final: Totalmente transparente */
-  );
-  
-  /* Estilos adicionales para que el nav se vea bien */
+  /* ... tus estilos de color, padding, etc. */
+  background-color: #ADD8E6; 
   padding: 15px;
-  border-radius: 50px; /* Opcional: bordes redondeados */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Opcional: sombra sutil */
+  border-radius: 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+  /* PROPIEDADES PARA FIJAR EL NAVBAR */
+  position: fixed; /* Fija la barra en el viewport */
+  top: 0;          /* La ancla a la parte superior */
+  width: 100%;     /* Asegura que cubra todo el ancho */
+  z-index: 1000;   /* Mantiene el nav por encima de otros elementos */
 }
 
 .nav-link:hover {
