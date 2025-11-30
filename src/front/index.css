@@ -1,5 +1,6 @@
 body {
-  background-color: white/*azure*/
+  background-color: white;/*azure*/
+  padding-top: 80px
 }
 
 .nav-difuminado {
@@ -12,7 +13,7 @@ body {
   /* PROPIEDADES PARA FIJAR EL NAVBAR */
   position: fixed; /* Fija la barra en el viewport */
   top: 0;          /* La ancla a la parte superior */
-  width: 100%;     /* Asegura que cubra todo el ancho */
+  padding: 15px;     /* Asegura que cubra todo el ancho */
   z-index: 1000;   /* Mantiene el nav por encima de otros elementos */
 }
 
