@@ -31,19 +31,18 @@ export const Navbar = () => {
 						<ul className="navbar-nav">
 
 							<li className="nav-item">
+								<a className="nav-link active mb-0" href="#perfil">Perfil</a>
+							</li>
+							
+							<li className="nav-item">
 								<a className="nav-link active mb-0" href="#educacion">Educación</a>
 							</li> 
 							
-							<Link to="/demo" style={{ textDecoration: "none" }}>
-								<li className="nav-item">
-									<a className="nav-link active mb-0" aria-current="page">Perfil</a>
-								</li>
-							</Link>
-							<Link to="/blog" style={{ textDecoration: "none" }}>
-								<li className="nav-item">
-									<a className="nav-link active mb-0">Habilidades</a>
-								</li>
-							</Link>
+														
+							<li className="nav-item">
+								<a className="nav-link active mb-0" href="#habilidades">Habilidades</a>
+							</li>
+							
 
 							
 

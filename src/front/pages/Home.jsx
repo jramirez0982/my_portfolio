@@ -139,7 +139,7 @@ export const Home = () => {
 
 	return (
 		<div className="text-center mt-2 pt-2">
-			<div className="fs-3 fw-bold mb-3">
+			<div  id="perfil" className="fs-3 fw-bold mb-3">
 				Perfil
 			</div>
 			{/* Contenedor principal para centrar la fila horizontalmente */}
