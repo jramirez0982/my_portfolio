@@ -72,11 +72,80 @@ export const Home = () => {
 
 	]
 
+	const habilidades = [
+		{
+			habilidad: "HTML",
+			logo: "",
+		},
+
+		{
+			habilidad: "JavaScript",
+			logo: "",
+		},
+
+		{
+			habilidad: "MySQL",
+			logo: "",
+		},
+
+		{
+			habilidad: "Python",
+			logo: "",
+		},
+
+		{
+			habilidad: "React",
+			logo: "",
+		},
+
+		{
+			habilidad: "Flask",
+			logo: "",
+		},
+
+		{
+			habilidad: "Postman",
+			logo: "",
+		},
+
+		{
+			habilidad: "Jest",
+			logo: "",
+		},
+
+		{
+			habilidad: "Matlab",
+			logo: "",
+		},
+
+		{
+			habilidad: "CSS",
+			logo: "",
+		},
+
+		{
+			habilidad: "Bootstrap",
+			logo: "",
+		},
+
+		{
+			habilidad: "Django",
+			logo: "",
+		},
+
+		{
+			habilidad: "SQLAlchemy",
+			logo: "",
+		},
+
+	]
+
+
 	return (
 		<div className="text-center mt-2 pt-2">
-				<div className="fs-3 fw-bold mb-3">
-					Perfil
-				</div>
+			<div className="fs-3 fw-bold mb-3">
+				Perfil
+			</div>
 			{/* Contenedor principal para centrar la fila horizontalmente */}
 			<div className="d-flex justify-content-center border border-3 rounded-5 mx-5 border-custom-light-blue">
 				{/* Contenedor de la imagen y el texto: usamos d-flex para que estén lado a lado */}
@@ -126,17 +195,23 @@ export const Home = () => {
 
 			</div>
 
-			<div id="educacion" className="justify-content-center mx-5 flex-column border-bottom border-custom-light-blue border-3 p-5">
+			<div id="habilidades" className="justify-content-center mx-5 flex-column border-bottom border-custom-light-blue border-3 p-5">
 				<div className="fs-3 fw-bold mb-3">
 					Habilidades
 				</div>
 
 				<div className="d-flex">
 					<div className="row g-0 justify-content-center">
-						
-						<HabilidadesCard />
-						
+						{
+							habilidades.map((habilidad, index) => {
+								return (
+									hola
+								)
+
+							})
+						}
 					</div>
+
 				</div>
 
 			</div>
