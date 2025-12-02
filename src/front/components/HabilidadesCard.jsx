@@ -2,10 +2,12 @@ import React from 'react'
 
 export const HabilidadesCard = (props) => {
     return (
-        <div className="card" style={{width: "20rem"}}>
-            <div className="card-img-top"><img className="img-fluid" src="src/front/assets/img/logo-react-color.png" alt="Card image cap" /></div>
-            <div className="card-body">
-                <h5 className="card-title">Card title</h5>
+        <div className="card border border-1 border-secondary m-0 card-elevable mx-0 h-75 w-75">
+            <div className="card-img-top mt-2 logo-contenedor">
+                <img className="img-fluid logo-ajustado" src={props.logo} alt="Card image cap" />
+            </div>
+            <div className="d-flex logo-imagen card-body justify-content-center align-items-end p-0">
+                <h5 className="card-title">{props.habilidad}</h5>
             </div>
         </div>
 

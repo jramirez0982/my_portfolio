@@ -75,67 +75,63 @@ export const Home = () => {
 	const habilidades = [
 		{
 			habilidad: "HTML",
-			logo: "",
+			logo: "src/front/assets/img/logo-html-color.png",
 		},
 
 		{
 			habilidad: "JavaScript",
-			logo: "",
+			logo: "src/front/assets/img/logo-js-color.png",
 		},
 
 		{
 			habilidad: "MySQL",
-			logo: "",
+			logo: "src/front/assets/img/logo-mysql-color.png",
 		},
 
 		{
 			habilidad: "Python",
-			logo: "",
+			logo: "src/front/assets/img/logo-python-color.png",
 		},
 
 		{
 			habilidad: "React",
-			logo: "",
+			logo: "src/front/assets/img/logo-react.png",
 		},
 
 		{
 			habilidad: "Flask",
-			logo: "",
+			logo: "src/front/assets/img/logo-flask.png",
 		},
 
 		{
 			habilidad: "Postman",
-			logo: "",
+			logo: "src/front/assets/img/logo-postman-color.png",
 		},
 
-		{
-			habilidad: "Jest",
-			logo: "",
-		},
-
+		
 		{
 			habilidad: "Matlab",
-			logo: "",
+			logo: "src/front/assets/img/logo-matlab-color.png",
 		},
 
 		{
 			habilidad: "CSS",
-			logo: "",
+			logo: "src/front/assets/img/logo-css-color.png",
 		},
 
 		{
 			habilidad: "Bootstrap",
-			logo: "",
+			logo: "src/front/assets/img/logo-bootstrap-color.png",
 		},
 
 		{
 			habilidad: "Django",
-			logo: "",
+			logo: "src/front/assets/img/logo-django-color.png",
 		},
 
 		{
-			habilidad: "SQLAlchemy",
-			logo: "",
+			habilidad: "SQLite",
+			logo: "src/front/assets/img/logo-SQlite-color.png",
 		},
 
 	]
@@ -203,9 +199,11 @@ export const Home = () => {
 				<div className="d-flex">
 					<div className="row g-0 justify-content-center">
 						{
-							habilidades.map((habilidad, index) => {
+							habilidades.map((habilidades, index) => {
 								return (
-									hola
+									<div className="col-12 col-md-3 col-lg-2 m-0 p-0">
+										<HabilidadesCard habilidad = {habilidades.habilidad} logo = {habilidades.logo}/>
+									</div>
 								)
 
 							})

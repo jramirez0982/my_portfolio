@@ -46,3 +46,37 @@ html {
   scroll-behavior: smooth;  
   
 }
+
+.logo-contenedor {
+    /* Altura fija para el espacio del logo. AJUSTA este valor (ej: 80px) */
+    height: 100%; 
+    
+    /* Centra el contenido (la imagen) horizontalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Oculta si la imagen es demasiado grande */
+}
+
+/* 2. Reglas para la imagen real dentro del contenedor */
+.logo-imagen {
+    /* Asegura que la imagen no exceda el tamaño del contenedor */
+    max-width: 100%;
+    max-height: 100%;
+    
+    /* ✨ CLAVE: Escala la imagen para que quepa completamente sin ser cortada. */
+    /* Usa 'cover' si quieres que la imagen llene el espacio, recortando los bordes. */
+    object-fit: contain; 
+}
+
+.logo-ajustado {
+    /* ✨ CLAVE: Le permite a la imagen encogerse hasta el 100% de la altura de su padre. */
+    max-height: 100%;
+    
+    /* Le permite a la imagen encogerse hasta el 100% del ancho de su padre. */
+    max-width: 100%; 
+    
+    /* ✨ CLAVE: Escala la imagen para que quepa completamente en el espacio, manteniendo su proporción. */
+    /* No cortará la imagen, pero puede dejar espacio en blanco si la proporción es muy diferente. */
+    object-fit: contain; 
+}
