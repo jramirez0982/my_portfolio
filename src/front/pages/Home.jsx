@@ -4,6 +4,7 @@ import julianRamirez from "../assets/img/julian-ramirez.png";
 import useGlobalReducer from "../hooks/useGlobalReducer.jsx";
 import { EstudiosCard } from "../components/EstudiosCard.jsx";
 import { HabilidadesCard } from "../components/HabilidadesCard.jsx";
+import { CertificacionesCard } from "../components/CertificacionesCard.jsx";
 
 export const Home = () => {
 
@@ -156,7 +157,7 @@ export const Home = () => {
 			nombreCertificacion: "Scrum Product Owner Professional Certificate",
 			fecha: "2020",
 			enteCertificador: "CertiProf"
-		}
+		},
 
 		
 		{
@@ -252,21 +253,9 @@ export const Home = () => {
 					Certificaciones
 				</div>
 
-				<div className="d-flex">
-					<div className="row g-0 justify-content-center">
-						{
-							habilidades.map((habilidades, index) => {
-								return (
-									<div className="col-12 col-md-3 col-lg-2 m-0 p-0">
-										<HabilidadesCard habilidad = {habilidades.habilidad} logo = {habilidades.logo}/>
-									</div>
-								)
+				<CertificacionesCard />
 
-							})
-						}
-					</div>
-
-				</div>
+				
 
 			</div>
 
