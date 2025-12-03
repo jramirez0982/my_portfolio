@@ -174,10 +174,8 @@ export const Home = () => {
 
 
 	return (
-		<div className="text-center mt-2 pt-2">
-			<div id="perfil" className="fs-3 fw-bold mb-3">
-				Perfil
-			</div>
+		<div className="text-center mt-5 pt-2">
+			
 			{/* Contenedor principal para centrar la fila horizontalmente */}
 			<div className="d-flex justify-content-center border border-3 rounded-5 mx-5 border-custom-light-blue">
 				{/* Contenedor de la imagen y el texto: usamos d-flex para que estén lado a lado */}
@@ -196,7 +194,7 @@ export const Home = () => {
 
 					<div>
 						<div className="fs-4 text-start fw-bold fst-italic">
-							Julian Ramirez
+							Perfil
 						</div>
 						{/* Contenedor del Texto (Lorem) */}
 						<div className="fs-6 font-base lead flex-grow-1 text-justify mt-2 text-start"> <strong> {/* flex-grow-1 hace que ocupe el espacio restante. text-start para que el texto justifique a la izquierda dentro de este div */}
