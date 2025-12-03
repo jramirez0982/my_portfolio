@@ -136,6 +136,37 @@ export const Home = () => {
 
 	]
 
+	const certificaciones = [
+
+		{
+			nombreCertificacion: "Desarrollador Full Stack",
+			fecha: "Agosto de 2025",
+			enteCertificador: "4Geeks Academy"
+		},
+
+		
+		{
+			nombreCertificacion: "Scrum Master Professional Certificate",
+			fecha: "2021",
+			enteCertificador: "CertiProf"
+		},
+
+		
+		{
+			nombreCertificacion: "Scrum Product Owner Professional Certificate",
+			fecha: "2020",
+			enteCertificador: "CertiProf"
+		}
+
+		
+		{
+			nombreCertificacion: "Kanban Essentials Professional Certificate",
+			fecha: "2020",
+			enteCertificador: "Certiprof"
+		}
+	]
+
+
 
 	return (
 		<div className="text-center mt-2 pt-2">
@@ -194,6 +225,31 @@ export const Home = () => {
 			<div id="habilidades" className="justify-content-center mx-5 flex-column border-bottom border-custom-light-blue border-3 p-5">
 				<div className="fs-3 fw-bold mb-3">
 					Habilidades
+				</div>
+
+				<div className="d-flex">
+					<div className="row g-0 justify-content-center">
+						{
+							habilidades.map((habilidades, index) => {
+								return (
+									<div className="col-12 col-md-3 col-lg-2 m-0 p-0">
+										<HabilidadesCard habilidad = {habilidades.habilidad} logo = {habilidades.logo}/>
+									</div>
+								)
+
+							})
+						}
+					</div>
+
+				</div>
+
+			</div>
+
+
+
+			<div id="Certificaciones" className="justify-content-center mx-5 flex-column border-bottom border-custom-light-blue border-3 p-5">
+				<div className="fs-3 fw-bold mb-3">
+					Certificaciones
 				</div>
 
 				<div className="d-flex">
