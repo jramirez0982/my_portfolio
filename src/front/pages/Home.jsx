@@ -142,28 +142,32 @@ export const Home = () => {
 		{
 			nombreCertificacion: "Desarrollador Full Stack",
 			fecha: "Agosto de 2025",
-			enteCertificador: "4Geeks Academy"
+			enteCertificador: "4Geeks Academy",
+			logo: "src/front/assets/img/full-stack-4geeks.png"
 		},
 
 		
 		{
 			nombreCertificacion: "Scrum Master Professional Certificate",
 			fecha: "2021",
-			enteCertificador: "CertiProf"
+			enteCertificador: "CertiProf",
+			logo: "src/front/assets/img/scrum-master.png"
 		},
 
 		
 		{
 			nombreCertificacion: "Scrum Product Owner Professional Certificate",
 			fecha: "2020",
-			enteCertificador: "CertiProf"
+			enteCertificador: "CertiProf",
+			logo: "src/front/assets/img/productowner.png"
 		},
 
 		
 		{
 			nombreCertificacion: "Kanban Essentials Professional Certificate",
 			fecha: "2020",
-			enteCertificador: "Certiprof"
+			enteCertificador: "Certiprof",
+			logo: "src/front/assets/img/kanban.png"
 		}
 	]
 
@@ -249,11 +253,23 @@ export const Home = () => {
 
 
 			<div id="Certificaciones" className="justify-content-center mx-5 flex-column border-bottom border-custom-light-blue border-3 p-5">
-				<div className="fs-3 fw-bold mb-3">
+				<div id="certificaciones" className="fs-3 fw-bold mb-5 pb-2">
 					Certificaciones
 				</div>
 
-				<CertificacionesCard />
+				<div className="d-flex">
+					<div className="row g-2 justify-content-center">
+						{
+							certificaciones.map((certificado, index) => {
+								return (
+									<div className="col-12 col-md-3 col-lg-5 m-1">
+										<CertificacionesCard entidad={certificado.entidad} titulo={certificado.Titulo} fecha={certificado.fecha} logo={certificado.logo} />
+									</div>
+								)
+							})
+						}
+					</div>
+				</div>
 
 				
 

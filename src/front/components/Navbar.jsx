@@ -44,13 +44,10 @@ export const Navbar = () => {
 							</li>
 							
 
+							<li className="nav-item">
+								<a className="nav-link active mb-0" href="#certificaciones">Certificaciones</a>
+							</li>
 							
-
-							<Link to="/blog" style={{ textDecoration: "none" }}>
-								<li className="nav-item">
-									<a className="nav-link active mb-0">Certificaciones</a>
-								</li>
-							</Link>
 							<Link to="/blog" style={{ textDecoration: "none" }}>
 								<li className="nav-item">
 									<a className="nav-link active mb-0">Experiencia</a>
