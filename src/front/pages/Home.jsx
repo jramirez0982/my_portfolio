@@ -109,7 +109,7 @@ export const Home = () => {
 			logo: "src/front/assets/img/logo-postman-color.png",
 		},
 
-		
+
 		{
 			habilidad: "Matlab",
 			logo: "src/front/assets/img/logo-matlab-color.png",
@@ -146,7 +146,7 @@ export const Home = () => {
 			logo: "src/front/assets/img/full-stack-4geeks.png"
 		},
 
-		
+
 		{
 			nombreCertificacion: "Scrum Master Professional Certificate",
 			fecha: "2021",
@@ -154,7 +154,7 @@ export const Home = () => {
 			logo: "src/front/assets/img/scrum-master.png"
 		},
 
-		
+
 		{
 			nombreCertificacion: "Scrum Product Owner Professional Certificate",
 			fecha: "2020",
@@ -162,7 +162,7 @@ export const Home = () => {
 			logo: "src/front/assets/img/productowner.png"
 		},
 
-		
+
 		{
 			nombreCertificacion: "Kanban Essentials Professional Certificate",
 			fecha: "2020",
@@ -175,7 +175,7 @@ export const Home = () => {
 
 	return (
 		<div className="text-center mt-2 pt-2">
-			<div  id="perfil" className="fs-3 fw-bold mb-3">
+			<div id="perfil" className="fs-3 fw-bold mb-3">
 				Perfil
 			</div>
 			{/* Contenedor principal para centrar la fila horizontalmente */}
@@ -193,14 +193,20 @@ export const Home = () => {
 							alt="Julian Ramirez"
 						/>
 					</div>
-					{/* Contenedor del Texto (Lorem) */}
-					<div className="font-base lead flex-grow-1 text-justify mt-2"> <strong> {/* flex-grow-1 hace que ocupe el espacio restante. text-start para que el texto justifique a la izquierda dentro de este div */}
-						Ingeniero Electrónico y Magíster en Ciencias Computacionales, poseo una sólida trayectoria
-						profesional liderando equipos y gestionando proyectos tecnológicos. Soy Full Stack Developer
-						experto en Python, JavaScript, React, Flask y SQL. Mi experiencia en sectores como el aeronáutico y
-						el mantenimiento industrial me permite estructurar, optimizar y liderar proyectos creando soluciones escalables y seguras.
-						Mi enfoque es aportar valor, conectando las necesidades de negocio con la tecnología a través de arquitecturas eficientes,
-						conectando la visión de negocio con la excelencia técnica. </strong>
+
+					<div>
+						<div className="fs-4 text-start fw-bold fst-italic">
+							Julian Ramirez
+						</div>
+						{/* Contenedor del Texto (Lorem) */}
+						<div className="fs-6 font-base lead flex-grow-1 text-justify mt-2 text-start"> <strong> {/* flex-grow-1 hace que ocupe el espacio restante. text-start para que el texto justifique a la izquierda dentro de este div */}
+							Ingeniero Electrónico y Magíster en Ciencias Computacionales, poseo una sólida trayectoria
+							profesional liderando equipos y gestionando proyectos tecnológicos. Soy Full Stack Developer
+							experto en Python, JavaScript, React, Flask y SQL. Mi experiencia en sectores como el aeronáutico y
+							el mantenimiento industrial me permite estructurar, optimizar y liderar proyectos creando soluciones escalables y seguras.
+							Mi enfoque es aportar valor, conectando las necesidades de negocio con la tecnología a través de arquitecturas eficientes,
+							conectando la visión de negocio con la excelencia técnica. </strong>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -238,7 +244,7 @@ export const Home = () => {
 							habilidades.map((habilidades, index) => {
 								return (
 									<div className="col-12 col-md-3 col-lg-2 m-0 p-0">
-										<HabilidadesCard habilidad = {habilidades.habilidad} logo = {habilidades.logo}/>
+										<HabilidadesCard habilidad={habilidades.habilidad} logo={habilidades.logo} />
 									</div>
 								)
 
@@ -271,7 +277,74 @@ export const Home = () => {
 					</div>
 				</div>
 
+
+
+			</div>
+
+
+			<div id="experiencia" className="justify-content-center mx-5 flex-column border-bottom border-custom-light-blue border-3 p-5">
+				<div id="certificaciones" className="fs-3 fw-bold mb-5 pb-2">
+					Experiencia laboral
+				</div>
+
+			// Contenedor principal de la línea de tiempo
+				<div className="container py-5">
+
+					{/* La clase 'timeline-area' aplicará el CSS para la línea vertical */}
+					<div className="row timeline-area">
+
+						{/* =======================================================
+        Punto 1: Evento a la Izquierda 
+        ======================================================= */}
+						<div className="col-12 col-md-6 timeline-left">
+							<div className="timeline-card timeline-card-right">
+								<h3 className="timeline-title">Título del Evento Izquierdo</h3>
+								<p className="timeline-date">Enero 2020</p>
+								<p>Descripción detallada del evento que ocurrió en la parte izquierda de la línea de tiempo.</p>
+							</div>
+						</div>
+
+						{/* Columna vacía que actúa como separador en móviles */}
+						<div className="col-md-6 d-none d-md-block"></div>
+
+
+						{/* =======================================================
+        Punto 2: Evento a la Derecha 
+        ======================================================= */}
+						<div className="col-md-6 d-none d-md-block"></div> {/* Columna vacía */}
+
+						<div className="col-12 col-md-6 timeline-right">
+							<div className="timeline-card timeline-card-left">
+								<h3 className="timeline-title">Título del Evento Derecho</h3>
+								<p className="timeline-date">Marzo 2021</p>
+								<p>Descripción detallada del evento que ocurrió en la parte derecha de la línea de tiempo.</p>
+							</div>
+						</div>
+
+						{/* Repite esta estructura para cada evento (Izquierda/Derecha) */}
 				
+				
+									{/* =======================================================
+        Punto 3: Evento a la Izquierda 
+        ======================================================= */}
+						<div className="col-12 col-md-6 timeline-left">
+							<div className="timeline-card timeline-card-right">
+								<h3 className="timeline-title">Título del Evento Izquierdo</h3>
+								<p className="timeline-date">Enero 2020</p>
+								<p>Descripción detallada del evento que ocurrió en la parte izquierda de la línea de tiempo.</p>
+							</div>
+						</div>
+
+						{/* Columna vacía que actúa como separador en móviles */}
+						<div className="col-md-6 d-none d-md-block"></div>
+
+
+						
+
+					</div>
+				</div>
+
+
 
 			</div>
 

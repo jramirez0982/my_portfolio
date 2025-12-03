@@ -80,3 +80,85 @@ html {
     /* No cortará la imagen, pero puede dejar espacio en blanco si la proporción es muy diferente. */
     object-fit: contain; 
 }
+
+
+/* 1. Dibujar la Línea Vertical */
+.timeline-area {
+    /* La posición relativa es necesaria para posicionar el pseudo-elemento */
+    position: relative;
+    padding: 0 15px; /* Espaciado interno */
+}
+
+.timeline-area::before {
+    content: '';
+    position: absolute;
+    /* Dibuja la línea en el centro horizontal (50% menos la mitad del ancho de la línea) */
+    left: calc(50% - 1.5px); 
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background-color: #a8bfd4; /* Color gris claro de Bootstrap */
+    z-index: 0; /* Asegura que la línea esté detrás de las tarjetas */
+}
+
+/* 2. Estilos para las Tarjetas */
+.timeline-card {
+    position: relative;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f8f9fa; /* Fondo claro de Bootstrap */
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+/* 3. Ajuste Responsive y Orientación */
+@media (min-width: 768px) {
+    
+    /* Mueve la tarjeta de la izquierda hacia la línea central */
+    .timeline-left {
+        padding-right: 35px; /* Crea espacio para el conector */
+    }
+    
+    /* Mueve la tarjeta de la derecha hacia la línea central */
+    .timeline-right {
+        padding-left: 35px; /* Crea espacio para el conector */
+    }
+
+    /* Opcional: Centrar el texto en la parte izquierda */
+    .timeline-left .timeline-card {
+        text-align: right;
+    }
+}
+
+/* 1. Regla para todos los contenedores de lado (asegura que el círculo solo se pegue a esta columna) */
+.timeline-left, 
+.timeline-right {
+    position: relative; /* Asegura que el ::after se posicione correctamente */
+}
+
+/* 2. Regla Específica para dibujar el Círculo */
+/* ¡IMPORTANTE! Solo aplica ::after a los DIVs de la columna (timeline-left/right) */
+.timeline-left::after,
+.timeline-right::after {
+    content: '';
+    position: absolute;
+    width: 14px; 
+    height: 14px;
+    border-radius: 50%; 
+    background-color: rgb(46, 64, 235); 
+    border: 3px solid #fff; 
+    z-index: 1; 
+    top: 25px; /* Ajuste vertical */
+}
+
+/* 3. Posicionamiento del Lado Izquierdo */
+.timeline-left::after {
+    right: -7px; 
+    left: auto; /* Asegura que no haya conflicto con la regla del lado derecho */
+}
+
+/* 4. Posicionamiento del Lado Derecho */
+.timeline-right::after {
+    left: -7px; 
+    right: auto; /* Asegura que no haya conflicto con la regla del lado izquierdo */
+}
