@@ -198,7 +198,7 @@ export const Home = () => {
 					</div>
 
 					<div>
-						<div className="fs-4 text-start fw-bold fst-italic">
+						<div id="perfil" className="fs-4 text-start fw-bold fst-italic">
 							Perfil
 						</div>
 						{/* Contenedor del Texto (Lorem) */}
@@ -286,7 +286,7 @@ export const Home = () => {
 
 
 			<div id="experiencia" className="justify-content-center mx-5 flex-column border-bottom border-custom-light-blue border-3 p-5">
-				<div id="certificaciones" className="fs-3 fw-bold mb-5 pb-2">
+				<div id="experiencia" className="fs-3 fw-bold mb-5 pb-2">
 					Experiencia laboral
 				</div>
 

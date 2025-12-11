@@ -11,7 +11,7 @@ export const Blog = () => {
             
             <p className="lead">
                 <img src={rigoImageUrl} className="img-fluid mb-3" alt="Rigo Baby" />
-                <h1>este es mi blog</h1>
+                <h1>En construccion............</h1>
             </p>
             
         </div>

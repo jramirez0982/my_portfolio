@@ -48,9 +48,13 @@ export const Navbar = () => {
 								<a className="nav-link active mb-0 text-light" href="#certificaciones">Certificaciones</a>
 							</li>
 							
+							<li className="nav-item">
+								<a className="nav-link active mb-0 text-light" href="#experiencia">Experiencia</a>
+							</li>
+
 							<Link to="/blog" style={{ textDecoration: "none" }}>
 								<li className="nav-item">
-									<a className="nav-link active mb-0 text-light">Experiencia</a>
+									<a className="nav-link active mb-0 text-light">Blog</a>
 								</li>
 							</Link>
 						</ul>
