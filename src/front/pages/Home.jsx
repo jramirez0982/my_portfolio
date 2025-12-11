@@ -135,6 +135,11 @@ export const Home = () => {
 			logo: "src/front/assets/img/logo-SQlite-color.png",
 		},
 
+		{
+			habilidad: "Git & GitHub",
+			logo: "src/front/assets/img/logo-git-color.png",
+		},
+
 	]
 
 	const certificaciones = [

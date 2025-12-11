@@ -4,11 +4,11 @@ export const Navbar = () => {
 
 	return (
 
-		<nav className="nav-difuminado navbar navbar-expand-lg fixed-top mx-5">
-			<div className="container d-flex">
+		<nav className="nav-difuminado navbar navbar-expand-lg fixed-top mx-5" style={{ backgroundColor: "#003366" }}>
+			<div className="container d-flex ">
 
 				{/* Brand / Marca */}
-				<span className="navbar-brand mb-0 h1 fs-5 fst-italic text-wrap">Ing. Julián Andrés Ramírez R.</span>
+				<span className="navbar-brand mb-0 h1 fs-5 fst-italic text-light text-wrap">Ing. Julián Andrés Ramírez R.</span>
 
 				{/* 1. Botón Toggler para Móviles */}
 				<button
@@ -31,26 +31,26 @@ export const Navbar = () => {
 						<ul className="navbar-nav">
 
 							<li className="nav-item">
-								<a className="nav-link active mb-0" href="#perfil">Perfil</a>
+								<a className="nav-link active mb-0 text-light" href="#perfil">Perfil</a>
 							</li>
 							
 							<li className="nav-item">
-								<a className="nav-link active mb-0" href="#educacion">Educación</a>
+								<a className="nav-link active mb-0 text-light" href="#educacion">Educación</a>
 							</li> 
 							
 														
 							<li className="nav-item">
-								<a className="nav-link active mb-0" href="#habilidades">Habilidades</a>
+								<a className="nav-link active mb-0 text-light" href="#habilidades">Habilidades</a>
 							</li>
 							
 
 							<li className="nav-item">
-								<a className="nav-link active mb-0" href="#certificaciones">Certificaciones</a>
+								<a className="nav-link active mb-0 text-light" href="#certificaciones">Certificaciones</a>
 							</li>
 							
 							<Link to="/blog" style={{ textDecoration: "none" }}>
 								<li className="nav-item">
-									<a className="nav-link active mb-0">Experiencia</a>
+									<a className="nav-link active mb-0 text-light">Experiencia</a>
 								</li>
 							</Link>
 						</ul>
