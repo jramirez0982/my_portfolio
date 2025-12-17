@@ -5,6 +5,7 @@ import useGlobalReducer from "../hooks/useGlobalReducer.jsx";
 import { EstudiosCard } from "../components/EstudiosCard.jsx";
 import { HabilidadesCard } from "../components/HabilidadesCard.jsx";
 import { CertificacionesCard } from "../components/CertificacionesCard.jsx";
+import { Navbar } from "../components/Navbar.jsx";
 
 export const Home = () => {
 
@@ -179,6 +180,8 @@ export const Home = () => {
 
 
 	return (
+		<div>
+		<Navbar />
 		<div className="text-center mt-5 pt-2">
 			
 			{/* Contenedor principal para centrar la fila horizontalmente */}
@@ -351,6 +354,7 @@ export const Home = () => {
 
 			</div>
 
+		</div>
 		</div>
 	);
 }; 
