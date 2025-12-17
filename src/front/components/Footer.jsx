@@ -4,17 +4,17 @@ export const Footer = () => (
 
 	<footer style={{ backgroundColor: "#003366" }} className="text-white py-4">
   <div className="container">
-    {/* Añadimos g-4 para dar espacio (gutter) entre las columnas cuando se apilen */}
+    
     <div className="row text-center text-lg-start align-items-center g-4">
 
-      {/* Columna 1: Logo */}
+      
       <div className="col-12 col-sm-6 col-lg-3">
         <div className="d-flex justify-content-center justify-content-lg-start">
           <img className="rounded-circle" src={logoB} alt="Logo" style={{ maxWidth: "100%", height: "auto" }} width={200} />
         </div>
       </div>
 
-      {/* Columna 2: Teléfono/Email */}
+      
       <div className="col-12 col-sm-6 col-lg-3">
         <h6 className="fw-bold"><i className="fa-solid fa-phone"></i> Teléfono: +57 3113770557</h6>
         <p className="mb-0"><strong><i className="fa-solid fa-envelope"></i> Email</strong></p>
@@ -23,7 +23,7 @@ export const Footer = () => (
         </a>
       </div>
 
-      {/* Columna 3: Github */}
+      
       <div className="col-12 col-sm-6 col-lg-3">
         <h6 className="fw-bold">Github</h6>
         <p className="mb-0"><strong><i className="fa-brands fa-github"></i> Perfil</strong></p>
@@ -32,7 +32,7 @@ export const Footer = () => (
         </a>
       </div>
 
-      {/* Columna 4: Redes */}
+      
       <div className="col-12 col-sm-6 col-lg-3">
         <h6 className="fw-bold">Redes</h6>
         <p className="mb-0"><strong><i className="fa-brands fa-linkedin"></i> LinkedIn</strong></p>
