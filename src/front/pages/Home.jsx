@@ -303,10 +303,10 @@ export const Home = () => {
         Punto 1: Evento a la Izquierda 
         ======================================================= */}
 							<div className="col-12 col-md-6 timeline-left">
-								<div className="timeline-card timeline-card-right">
-									<h3 className="timeline-title">Jefe de Operaciones</h3>
-									<h5 className="timeline-title">Estilo Ingenieria</h5>
-									<p className="timeline-date">Enero 2023 - Actual</p>
+								<div className="timeline-card">
+									<h3>Jefe de Operaciones</h3>
+									<h5>Estilo Ingenieria</h5>
+									<p>Enero 2023 - Actual</p>
 									<p className="text-start">
 										<ul>
 											<li>
@@ -335,11 +335,11 @@ export const Home = () => {
         ======================================================= */}
 							<div className="col-md-6 d-none d-md-block"></div> {/* Columna vacía */}
 
-							<div className="col-12 col-md-6 timeline-right">
-								<div className="timeline-card timeline-card-left text-start">
-									<h3 className="timeline-title ">Ingeneiro de Proyectos</h3>
-									<h5 className="timeline-title">Aeronautica Civil de Colombia</h5>
-									<p className="timeline-date">Septiembre de 2018 - Octubre de 2022</p>
+							<div className="col-12 col-md-6">
+								<div className="timeline-card  text-start">
+									<h3>Ingeneiro de Proyectos</h3>
+									<h5>Aeronautica Civil de Colombia</h5>
+									<p>Septiembre de 2018 - Octubre de 2022</p>
 									<p>
 										<ul>
 											<li>
@@ -366,10 +366,10 @@ export const Home = () => {
         Punto 3: Evento a la Izquierda 
         ======================================================= */}
 							<div className="col-12 col-md-6 timeline-left">
-								<div className="timeline-card timeline-card-right">
-									<h3 className="timeline-title">Superintendente Técnico</h3>
-									<h5 className="timeline-title">Otis Elevator Company Colombia SAS</h5>
-									<p className="timeline-date">Octubre de 2007 - Septiembre de 2018</p>
+								<div className="timeline-card">
+									<h3>Superintendente Técnico</h3>
+									<h5>Otis Elevator Company Colombia SAS</h5>
+									<p>Octubre de 2007 - Septiembre de 2018</p>
 									<p className="text-start">
 										<ul>
 											<li>
